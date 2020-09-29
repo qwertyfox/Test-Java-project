@@ -20,6 +20,11 @@ public class Main {
             System.out.println(s.getName());
         }
 
+        List<Staff> staffs = new LinkedList<>();
+        Staff staff = new Staff(1,"Tony", "Research");
+        Staff staff1 = new Staff(2,"Steve", "Moral Studies");
+        Staff staff2 = new Staff(3,"Dr.Strange","Mystic Arts");
+
 
     }
 }
