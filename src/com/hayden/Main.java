@@ -25,6 +25,13 @@ public class Main {
         Staff staff1 = new Staff(2,"Steve", "Moral Studies");
         Staff staff2 = new Staff(3,"Dr.Strange","Mystic Arts");
 
+        staffs.add(staff);
+        staffs.add(staff1);
+        staffs.add(staff2);
+
+        for(Staff s : staffs){
+            System.out.println(s.getName()+ " Department : "+ s.getDepartment());
+        }
 
     }
 }
