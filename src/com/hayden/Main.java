@@ -18,34 +18,36 @@ public class Main {
         students.add(student1);
         students.add(student2);
 
-
         for(Student s : students){
             System.out.println(s.getName());
         }
 
-        List<Staff> staffs = new LinkedList<>();
         Staff staff = new Staff(1,"Tony", "Research");
         Staff staff1 = new Staff(2,"Steve", "Moral Studies");
         Staff staff2 = new Staff(3,"Dr.Strange","Mystic Arts");
+        Staff newStaff = new Staff(8,"Hank","Quantum Physics");
+        Staff newStaff1 = new Staff(9,"Vision","Philosophy");
 
+        List<Staff> staffs = new LinkedList<>();
         staffs.add(staff);
         staffs.add(staff1);
         staffs.add(staff2);
+        staffs.add(newStaff);
+        staffs.add(newStaff1);
 
         for(Staff s : staffs){
             System.out.println(s.getName()+ " Department : "+ s.getDepartment());
         }
 
         Set<Staff> staffSet = new HashSet<>();
-        Staff newStaff = new Staff(8,"Hank","Quantum Physics");
-        Staff newStaff1 = new Staff(9,"Vision","Philosophy");
-
+        staffSet.add(staff);
+        staffSet.add(staff1);
+        staffSet.add(staff2);
         staffSet.add(newStaff);
         staffSet.add(newStaff1);
 
         for(Staff s : staffSet){
             System.out.println(s.getName()+ " works on " +s.getDepartment());
         }
-
     }
 }
