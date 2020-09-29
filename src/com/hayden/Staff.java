@@ -3,9 +3,9 @@ package com.hayden;
 public class Staff {
     private int staff_id;
     private String name;
-    private String department;
+    private Department department;
 
-    public Staff(int staff_id, String name, String department) {
+    public Staff(int staff_id, String name, Department department) {
         this.staff_id = staff_id;
         this.name = name;
         this.department = department;
@@ -27,11 +27,11 @@ public class Staff {
         this.name = name;
     }
 
-    public String getDepartment() {
+    public Department getDepartment() {
         return department;
     }
 
-    public void setDepartment(String department) {
+    public void setDepartment(Department department) {
         this.department = department;
     }
 }

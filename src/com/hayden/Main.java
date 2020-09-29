@@ -9,24 +9,25 @@ public class Main {
 
     public static void main(String[] args) {
 
-        List<Student> students = new LinkedList<Student>();
+        List<Student> students = new LinkedList<>();
         Student student = new Student(1,"Peter","Engineering");
         Student student1 = new Student(2,"Pepper","Management");
         Student student2 = new Student(3,"Rowan","Acting");
-        Student student3 = new Student(4, "Antman","Quantum Physics");
+        Student student3 = new Student(4, "Ant-man","Quantum Physics");
         students.add(student);
         students.add(student1);
         students.add(student2);
+        students.add(student3);
 
         for(Student s : students){
             System.out.println(s.getName());
         }
 
-        Staff staff = new Staff(1,"Tony", "Research");
-        Staff staff1 = new Staff(2,"Steve", "Moral Studies");
-        Staff staff2 = new Staff(3,"Dr.Strange","Mystic Arts");
-        Staff newStaff = new Staff(8,"Hank","Quantum Physics");
-        Staff newStaff1 = new Staff(9,"Vision","Philosophy");
+        Staff staff = new Staff(1,"Tony", Department.RESEARCH);
+        Staff staff1 = new Staff(2,"Steve", Department.MORAL_STUDIES);
+        Staff staff2 = new Staff(3,"Dr.Strange",Department.MYSTIC_ARTS);
+        Staff newStaff = new Staff(8,"Hank",Department.QUANTUM_PHYSICS);
+        Staff newStaff1 = new Staff(9,"Vision",Department.PHILOSOPHY);
 
         List<Staff> staffs = new LinkedList<>();
         staffs.add(staff);

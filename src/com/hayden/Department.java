@@ -7,6 +7,8 @@ public enum Department {
     ENGINEERING,
     MANAGEMENT,
     ACTING,
-    QUANTUM_PHYSICS;
+    QUANTUM_PHYSICS,
+    MYSTIC_ARTS
+
 
 }
